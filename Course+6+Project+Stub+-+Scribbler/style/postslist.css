@@ -1,0 +1,107 @@
+body{
+    background-color: #ffeedd;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 1%;
+}
+
+.header-btn{
+    border: none;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+#logo{
+    font-family: 'Montez', cursive; 
+    color: blue;
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+}
+
+#subhedding{
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+.main-container-posts-list{
+    display: flexbox;
+
+}
+
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping to create new rows */
+    justify-content: center; /* Add space between cards */
+}
+
+.card {
+    width: 48%; 
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.posted-user-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: lightgrey;
+}
+
+.content {
+    
+    padding-left: 20px;
+}
+
+#post-content{
+    max-lines: 3;
+
+}
+.post-user-name{
+    margin: 0px;
+}
+
+.content-delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.more-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.trash{
+    padding: 10px;
+}
+
+
+

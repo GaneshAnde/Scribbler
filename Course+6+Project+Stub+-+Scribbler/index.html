@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" href="../Course+6+Project+Stub+-+Scribbler/style/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="../Course+6+Project+Stub+-+Scribbler/script/common.js"></script>
+
+</head>
+
+<body id="bodyId">
+    <!-- TODO: Include all your code for the header and home page here -->
+
+    <div id="mainContainer">
+        <div class="header">
+            <div class="logInBtns">
+                <p id="logo">Scribber</p>
+                <p id="subhedding">Explore, Imagine, Create</p>
+            </div>
+            <div class="logo">
+                <button class="header-btn" id="signIn" onclick="onClickSignIn()">Sign In</button>
+                <button class="header-btn" id="signUp" onclick="onClickSignUp()">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="mainPostContainer"  id="postsVisiblity">
+        <div class="container">
+            <div class="postBtns">
+                <button class="post-btns" id="allPosts" onclick="openAllPosts()">All Posts</button>
+                <button class="post-btns" id="createPosts" onclick="moveToCreatePost()">Create Post</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="m1">
+        <div class="modalPDiv" id="modalId">
+
+        </div>
+    </div>
+
+
+
+    <div class="modal1" id="keyWs">
+        <div class="modal2">
+            <div class="container1">
+                <div class="fist">
+                    <label class="getStarted">Get Started</label>
+                    <span id="cross" onclick="closePopUp()">x</span>
+                </div>
+
+                <form>
+                    <label class="name">Name</label>
+                    <input type="text" placeholder="Enter your name" required />
+                    <label class="userName">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label class="name">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <label class="confirmPassword">Confirm Password</label>
+                    <input type="password" placeholder="Re enter your password" required>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modalSignIn" id="keyWsSignIn">
+        <div class="modal2">
+            <div class="container1">
+                <div class="fist">
+                    <label class="getStarted">Welcome back</label>
+                    <span id="cross" onclick="closeSignInPopUp()">x</span>
+                </div>
+
+                <form>
+                    <label class="userName">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label class="name">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <button type="signIn" class="submit">Sign In</button>
+                    <div class="notMemberParent">
+                        <label id="notAMember">Not a member? <span id="signUpPopUpLink" onclick="openSignUpPopUp()">Sign
+                                Up</span></label>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

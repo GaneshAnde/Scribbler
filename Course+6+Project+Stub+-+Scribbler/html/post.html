@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/post.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="../script/post.js"></script>
+</head>
+<body>
+    <div id="mainContainer">
+        <div class="header">
+            <div class="logInBtns">
+                <p id="logo">Scribber</p>
+                <p id="subhedding">Explore, Imagine, Create</p>
+            </div>
+            <div class="logo">
+                <button class="header-btn" id="signIn" onclick="onClickSignIn()">Sign In</button>
+                <button class="header-btn" id="signUp" onclick="onClickSignUp()">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="post-main-container" >
+        <div id="post-detail-container">
+            <div id="title-div">
+                <label id="post-title">Heading of the post</label>
+            </div>
+            
+            <div id="post-user-edit">
+                <label id="userName">sriya Gupta</label>
+                <div id="edit-container" onclick="onClickOfEdit()">
+                    <label id="edit">Edit  <i class="fa-regular fa-pen-to-square" id="edit-ic"></i></label>
+                </div>
+            </div>
+            <div id="post-detals">
+                
+                <div id="post-content">
+                    <textarea id="content-post" disabled>Bumrah to Smith, out Lbw!! Oh well, well! Jasprit Bumrah you master. He completely foxed Smith here with a slower delivery. This is as good as the Shaun Marsh slower ball at the MCG or the Rizwan slower delivery here inAhmedabad. India outsmarting the Aussie batters by moving fields. Virat was asked to go to short mid-wicket from slip before this ball. So Smith in his mind could have thought I can't play leg-side now so let me play straight.And Bumrah so smartly slipped in an off-cutting slower delivery, Smith missed it and the finger went up.Interesting Smith didn't review that. He did have a chat with Head but walked off. Height was a question surely. Oh hang on, the replay says
+                    </textarea>
+                </div>
+                <div id="post-like" onclick="onClickOfLike()">
+                    <div>
+                        <label id="post-like-label" ><i class="fa-regular fa-thumbs-up" id="like-ic"></i> Like</label><br>
+                        <div id="like-count">Do the first person to like this</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

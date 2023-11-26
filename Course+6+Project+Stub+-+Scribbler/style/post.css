@@ -1,0 +1,105 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1%;
+    padding: 1%;
+}
+
+.header-btn{
+    border: none;
+    background-color: blue;
+    padding: 10px;
+    color: white;
+}
+#logo{
+    font-family: 'Montez', cursive; 
+    color: blue;
+    font-size: xx-large;
+    padding: 0;
+    margin: 0;
+}
+
+#subhedding{
+    font-family: 'Ubuntu Mono', monospace;
+    color: black;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+}
+
+#post-detail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#post-user-edit{
+    width: 80%;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#post-detals{
+    width: 80%;
+
+}
+
+#post-title{
+    color: black;
+    font-family: 'Arial Narrow Bold';
+    padding: 20px;
+}
+
+#post-content{
+    width: 100%;
+}
+
+#content-post{
+    width: 99%;
+    height: 200px;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#userName{
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+#edit-container, #post-like-label{
+    padding: 10px;
+    background-color: rgb(232, 11, 136);
+    color: white;
+}
+
+#like-count{
+    padding-top: 15px;
+}
+
+#title-div{
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: large;
+}
+
+[contenteditable="true"] {
+    outline: none; 
+}
+
+textarea {
+    outline: none; 
+    background-color: white;
+   /* // resize: none;  */
+}
+
+#post-like{
+    margin-top: 15px;
+}

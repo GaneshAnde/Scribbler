@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel="stylesheet" type="text/css"   href="../style/postslist.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="../script/postslist.js"></script>
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <!-- list of all posts starts here -->
+
+    <div id="mainContainer">
+        <div class="header">
+            <div class="logInBtns">
+                <p id="logo">Scribber</p>
+                <p id="subhedding">Explore, Imagine, Create</p>
+            </div>
+            <div class="logo">
+                <button class="header-btn" id="signIn" onclick="onClickSignIn()">Sign In</button>
+                <button class="header-btn" id="signUp" onclick="onClickSignUp()">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="main-container-posts-list" id="cardContainer">
+
+        <!-- post 1 starts here -->
+        <div class="card">
+            <div class="posted-user-name">
+                <p class="post-user-name">Srishti Gupta</p>
+            </div>
+
+            <div  class="content">
+                <div class="content-delete">
+                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span class="trash" onclick="onClickTrash(this)">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+                <p id="post-content">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <span  class="more-content">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"  onclick="openPostPage()"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="card">
+            <div class="posted-user-name">
+                <p  class="post-user-name">Colby Fayock</p>
+            </div>
+
+            <div  class="content">
+                <div class="content-delete">
+                    <p>What is linting and how can it save you time?</p>
+                    <span class="trash" onclick="onClickTrash(this)">
+                        <i class="fa-solid fa-trash-can"></i>
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    </span>
+                </div>
+                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <span class="more-content">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis" onclick="openPostPage()"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="card">
+            <div class="posted-user-name">
+                <p class="post-user-name">Yazeed Bzadough</p>
+            </div>
+
+            <div class="content">
+                <div class="content-delete">
+                    <p>How to Get More Views on Your Tech Blog</p>
+                    <span class="trash" onclick="onClickTrash(this)">
+                        <i class="fa-solid fa-trash-can"></i>
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                    </span>
+                </div>
+                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <span  class="more-content">
+                    
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis" onclick="openPostPage()"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="card">
+            <div class="posted-user-name">
+                <p class="post-user-name">Cedd Burge</p>
+            </div>
+
+            <div class="content">
+                <div class="content-delete">
+                    <p>How to write easily describable code</p>
+                    <span class="trash" onclick="onClickTrash(this)">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                    leads to confusion when discussing the code.</p>
+                <span  class="more-content">
+                    <i class="fa-solid fa-ellipsis"  onclick="openPostPage()"></i>
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+
+                </span>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="card">
+            <div class="posted-user-name">
+                <p class="post-user-name">Srishti Gupta</p>
+            </div>
+
+            <div class="content">
+                <div class="content-delete">
+                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span class="trash" onclick="onClickTrash(this)">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+
+                    </span>
+                </div>
+                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                    named xyz.</p>
+                <span  class="more-content">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa-solid fa-ellipsis"  onclick="openPostPage()"></i>
+                </span>
+            </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+
+    </div>
+    <!-- list of all posts ends here -->
+</body>
+
+</html>

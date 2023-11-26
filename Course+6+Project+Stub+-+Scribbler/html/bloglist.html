@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"   href="../style/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <script src="../script/common.js"></script>
+</head>
+<body id="block-list-body" background="#FF0000">
+
+    <div id="mainContainer">
+        <div class="header">
+            <div class="logInBtns">
+                <p id="logo">Scribber</p>
+                <p id="subhedding">Explore, Imagine, Create</p>
+            </div>
+            <div class="logo">
+                <button class="header-btn" id="signIn" onclick="onClickSignIn()">Sign In</button>
+                <button class="header-btn" id="signUp" onclick="onClickSignUp()">Sign Up</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="main-model-create-post">
+        <div class="modalCreatePost" id="keyWsCreatePost">
+        <div class="modalCretPost">
+            <div class="container1">
+                <div class="fist">
+                    <label class="getStarted">Create a Post</label>
+                    <span id="cross" onclick="" >x</span>
+                </div>
+    
+                <form id="create_post_id">
+                    <label class="userName">Title</label>
+                    <input type="text" placeholder="Enter title of your response" required>
+                    <label class="name" id="post-title">Contents</label>
+                    <!-- <input type="text" id="post-content" placeholder="Enter content of your post" required>    -->
+                    <div>
+                        <textarea type="text" id="post-content" placeholder="Enter content of your post" required></textarea>                   
+                    </div>
+                </form>
+                <div class="closePost">
+                    <button onclick="moveToHome()" id="closePostBtn">Create</button>
+                </div>
+                
+    
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+</body>
+</html>
