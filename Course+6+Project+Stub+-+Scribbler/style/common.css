@@ -236,7 +236,7 @@ input{
   #cross{
     align-self: self-end;
     padding: 10dp;
-
+    cursor: pointer;
   }
 
   #notAMember{
@@ -291,6 +291,7 @@ input{
     padding: 10px 20px;
     background-color: green;
     color: white;
+    cursor: pointer;
     border: none;
     font-size: medium;
   }
@@ -300,3 +301,6 @@ input{
     flex-direction: column;
     justify-content: center;
   }
+
+
+  
